@@ -25,6 +25,10 @@ body {
   letter-spacing: 0.03em;
 }
 
+img {
+  display: block;
+}
+
 .section-title {
   color: var(--secondly-text-color);
   font-weight: 700;
@@ -211,6 +215,10 @@ ul {
 
 /* Ourwork */
 
+.ourwork {
+  padding-top: 0;
+}
+
 .ourwork-list {
   display: flex;
 }
@@ -249,7 +257,7 @@ ul {
 }
 
 .footer-item:not(:last-child) {
-  margin-bottom: 6px;
+  margin-bottom: 9px;
 }
 
 .footer .link {
@@ -276,7 +284,7 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
 
-  margin-bottom: 9px;
+  margin-bottom: 6px;
 }
 
 /* --------CSS для портфоліо(portfolio.html)-------- */
@@ -292,6 +300,10 @@ ul {
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
+
+  min-height: 38px;
+  border-radius: 4px;
+  border: transparent;
 }
 
 .button.secondary:hover,
@@ -302,21 +314,46 @@ ul {
 
 /*  наши работы */
 
-.works .work-title {
+.examples-nav {
+  display: flex;
+  grid-gap: 8px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 30px; */
+  flex-basis: calc((100% - 30px * 2) / 3);
+}
+
+.examples-title {
   color: var(--secondly-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-bottom: 4px;
 }
 
-.works .work-text {
+.examples-text {
   color: var(--main-text-color);
 
   font-size: 16px;
   line-height: 1.87;
 }
 
-.work-link {
+.examples-link {
   text-decoration: none;
+}
+
+.team-wrapper {
+  border: solid #eeeeee 1px;
+  border-top: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
