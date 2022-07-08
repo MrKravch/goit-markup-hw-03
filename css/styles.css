@@ -33,7 +33,13 @@ body {
   text-align: center;
 }
 
-/* Базові скидання */
+/* -----------Базові стилі-----------*/
+
+/* section */
+
+.section {
+  padding: 94px 0;
+}
 
 /* Container */
 .container {
@@ -132,6 +138,7 @@ ul {
 /* hero */
 .hero {
   background-color: var(--second-bg-color);
+  text-align: center;
 }
 
 .hero-title {
@@ -139,9 +146,10 @@ ul {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+
+  margin-bottom: 30px;
 }
 
 .button.primary {
@@ -153,19 +161,48 @@ ul {
   line-height: 1.87;
   letter-spacing: 0.06em;
   cursor: pointer;
+
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 32px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: transparent;
 }
 
 /* Advantages */
 
-.advantages .advantages-title {
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advantages-list {
+  display: flex;
+  gap: 30px;
+}
+
+.advantages-title {
   color: var(--secondly-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+
+  margin-bottom: 10px;
 }
 
-.advantages p {
+.advantages-text {
   font-size: 14px;
   line-height: 1.71;
 }
