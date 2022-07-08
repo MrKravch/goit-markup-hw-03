@@ -31,6 +31,8 @@ body {
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+
+  margin-bottom: 50px;
 }
 
 /* -----------Базові стилі-----------*/
@@ -207,6 +209,12 @@ ul {
   line-height: 1.71;
 }
 
+/* Ourwork */
+
+.ourwork-list {
+  display: flex;
+}
+
 /* Ourteam */
 .ourteam {
   background-color: var(--secondary-white-color);
@@ -230,10 +238,18 @@ ul {
 
 .footer {
   background-color: var(--second-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .logo {
   color: var(--main-withe-color);
+  margin-bottom: 20px;
+  display: block;
+}
+
+.footer-item:not(:last-child) {
+  margin-bottom: 6px;
 }
 
 .footer .link {
@@ -259,6 +275,8 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+
+  margin-bottom: 9px;
 }
 
 /* --------CSS для портфоліо(portfolio.html)-------- */
