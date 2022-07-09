@@ -325,6 +325,9 @@ ul {
   display: flex;
   flex-wrap: wrap;
   /* gap: 30px; */
+}
+
+.examples-item {
   flex-basis: calc((100% - 30px * 2) / 3);
 }
 
