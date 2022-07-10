@@ -145,6 +145,8 @@ ul {
 .hero {
   background-color: var(--second-bg-color);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title {
@@ -221,6 +223,7 @@ ul {
 
 .ourwork-list {
   display: flex;
+  gap: 30px;
 }
 
 /* Ourteam */
@@ -228,15 +231,34 @@ ul {
   background-color: var(--secondary-white-color);
 }
 
-.ourteam .ourteam-title {
+.ourteam-item {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+  border-radius: 0px 0px 4px 4px;
+}
+
+.ourteam-wrapper {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.ourteam-list {
+  display: flex;
+  gap: 30px;
+}
+
+.ourteam-title {
   color: var(--secondly-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+
+  margin-bottom: 10px;
 }
 
-.ourteam p {
+.ourteam-text {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
@@ -254,10 +276,7 @@ ul {
   color: var(--main-withe-color);
   margin-bottom: 20px;
   display: block;
-}
-
-.footer-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-right: 0;
 }
 
 .footer .link {
@@ -277,14 +296,15 @@ ul {
   font-style: normal;
 }
 
+.footer-item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .footer-address-street {
   color: var(--main-withe-color);
 
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-
-  margin-bottom: 6px;
 }
 
 /* --------CSS для портфоліо(portfolio.html)-------- */
@@ -294,6 +314,7 @@ ul {
 .button.secondary {
   color: var(--secondly-text-color);
   background-color: var(--secondary-white-color);
+
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -324,11 +345,7 @@ ul {
 .examples-list {
   display: flex;
   flex-wrap: wrap;
-  /* gap: 30px; */
-}
-
-.examples-item {
-  flex-basis: calc((100% - 30px * 2) / 3);
+  gap: 30px;
 }
 
 .examples-title {
