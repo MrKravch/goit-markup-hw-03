@@ -11,17 +11,25 @@
 /* вторинний бекграунд колір #2F303A */
 
 :root {
+  /* TEXT */
   --main-text-color: #757575;
   --secondly-text-color: #212121;
+  /* Fonts */
+  --main-font: Roboto, sans-serif;
+  --secondary-font: "Raleway";
+  /* Colors */
   --accent-color: #2196f3;
   --secondary-white-color: #f5f4fa;
   --main-withe-color: #ffffff;
   --second-bg-color: #2f303a;
+  /* Others */
+  --indent: 30px;
+  --items: 3;
 }
 body {
   color: var(--main-text-color);
   background-color: var(--main-withe-color);
-  font-family: Roboto, sans-serif;
+  font-family: var(--main-font);
   letter-spacing: 0.03em;
 }
 
@@ -40,6 +48,16 @@ img {
 }
 
 /* -----------Базові стилі-----------*/
+
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--indent);
+}
+
+.card-set-items {
+  flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+}
 
 /* section */
 
@@ -103,7 +121,7 @@ ul {
 
 .logo {
   color: #000000;
-  font-family: "Raleway";
+  font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
@@ -198,8 +216,7 @@ ul {
 }
 
 .advantages-list {
-  display: flex;
-  gap: 30px;
+  --items: 4;
 }
 
 .advantages-title {
@@ -225,7 +242,7 @@ ul {
 
 .ourwork-list {
   display: flex;
-  gap: 30px;
+  gap: var(--indent);
 }
 
 /* Ourteam */
@@ -246,8 +263,7 @@ ul {
 }
 
 .ourteam-list {
-  display: flex;
-  gap: 30px;
+  --items: 4;
 }
 
 .ourteam-title {
@@ -346,12 +362,6 @@ ul {
   margin-bottom: 50px;
 }
 
-.examples-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
 .examples-title {
   color: var(--secondly-text-color);
   font-weight: 700;
@@ -371,6 +381,11 @@ ul {
 
 .examples-link {
   text-decoration: none;
+}
+
+.examples-img {
+  max-width: 100%;
+  height: auto;
 }
 
 .team-wrapper {
