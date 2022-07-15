@@ -35,6 +35,8 @@ body {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .section-title {
@@ -381,11 +383,6 @@ ul {
 
 .examples-link {
   text-decoration: none;
-}
-
-.examples-img {
-  max-width: 100%;
-  height: auto;
 }
 
 .team-wrapper {
